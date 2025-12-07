@@ -1,0 +1,69 @@
+﻿# Build artifacts
+/bin/
+/obj/
+/out/
+/artifacts/
+/publish/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# NuGet & packages
+*.nupkg
+packages/
+.nuget/
+.nuget/packages/
+
+# Test results
+TestResults/
+*.trx
+coverage/
+*.coverage
+*.coveragexml
+
+# Logs and temp
+*.log
+*.tmp
+
+# Runtime / generated
+project.lock.json
+project.fragment.lock.json
+*.db
+*.mdf
+*.ldf
+*.sqlite
+*.db-journal
+
+# Publish / deployment
+*.Publish.xml
+*.azurePubxml
+
+# Resharper
+_ReSharper*/
+*/.ReSharper*/
+*.DotSettings.user
+
+# Rider / IDE config
+.idea/
+*.iml
+
+# OS files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Node / front-end (if present)
+node_modules/
+bower_components/
+
+# Certificates
+*.pfx
