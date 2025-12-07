@@ -9,6 +9,7 @@
       "CleanArchitecture.API/1.0.0": {
         "dependencies": {
           "CleanArchitecture.Application": "1.0.0",
+          "CleanArchitecture.Caching": "1.0.0",
           "CleanArchitecture.Persistence": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.5",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
@@ -1026,6 +1027,17 @@
           }
         }
       },
+      "CleanArchitecture.Caching/1.0.0": {
+        "dependencies": {
+          "CleanArchitecture.Application": "1.0.0"
+        },
+        "runtime": {
+          "CleanArchitecture.Caching.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "CleanArchitecture.Domain/1.0.0": {
         "runtime": {
           "CleanArchitecture.Domain.dll": {
@@ -1629,6 +1641,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "CleanArchitecture.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CleanArchitecture.Caching/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

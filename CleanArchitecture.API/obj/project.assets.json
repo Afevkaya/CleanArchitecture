@@ -1705,6 +1705,19 @@
           "bin/placeholder/CleanArchitecture.Application.dll": {}
         }
       },
+      "CleanArchitecture.Caching/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CleanArchitecture.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArchitecture.Caching.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitecture.Caching.dll": {}
+        }
+      },
       "CleanArchitecture.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -4712,6 +4725,11 @@
       "path": "../CleanArchitecture.Application/CleanArchitecture.Application.csproj",
       "msbuildProject": "../CleanArchitecture.Application/CleanArchitecture.Application.csproj"
     },
+    "CleanArchitecture.Caching/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchitecture.Caching/CleanArchitecture.Caching.csproj",
+      "msbuildProject": "../CleanArchitecture.Caching/CleanArchitecture.Caching.csproj"
+    },
     "CleanArchitecture.Domain/1.0.0": {
       "type": "project",
       "path": "../CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
@@ -4726,6 +4744,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "CleanArchitecture.Application >= 1.0.0",
+      "CleanArchitecture.Caching >= 1.0.0",
       "CleanArchitecture.Persistence >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
@@ -4768,6 +4787,9 @@
           "projectReferences": {
             "D:\\Software\\BE\\Fatih\\CleanArch\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj": {
               "projectPath": "D:\\Software\\BE\\Fatih\\CleanArch\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj"
+            },
+            "D:\\Software\\BE\\Fatih\\CleanArch\\CleanArchitecture\\CleanArchitecture.Caching\\CleanArchitecture.Caching.csproj": {
+              "projectPath": "D:\\Software\\BE\\Fatih\\CleanArch\\CleanArchitecture\\CleanArchitecture.Caching\\CleanArchitecture.Caching.csproj"
             },
             "D:\\Software\\BE\\Fatih\\CleanArch\\CleanArchitecture\\CleanArchitecture.Persistence\\CleanArchitecture.Persistence.csproj": {
               "projectPath": "D:\\Software\\BE\\Fatih\\CleanArch\\CleanArchitecture\\CleanArchitecture.Persistence\\CleanArchitecture.Persistence.csproj"

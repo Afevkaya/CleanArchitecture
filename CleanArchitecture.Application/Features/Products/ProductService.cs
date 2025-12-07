@@ -1,5 +1,6 @@
 using System.Net;
 using AutoMapper;
+using CleanArchitecture.Application.Caching;
 using CleanArchitecture.Application.Contracts.Persistence;
 using CleanArchitecture.Application.Features.Products.Create;
 using CleanArchitecture.Application.Features.Products.Dto;
@@ -9,12 +10,16 @@ using CleanArchitecture.Domain.Entities;
 
 namespace CleanArchitecture.Application.Features.Products;
 
-public class ProductService(IProductRepository productRepository, IUnitOfWork unitOfWork,IMapper mapper):IProductService
+public class ProductService(IProductRepository productRepository, IUnitOfWork unitOfWork,IMapper mapper, ICacheService cacheService):IProductService
 {
+    private const string CacheKey = "Products";
     public async Task<ServiceResult<List<ProductDto>>> GetAllAsync()
     {
+        var productsFromCache = await cacheService.GetAsync<List<ProductDto>>(CacheKey);
+        if(productsFromCache is not null) return ServiceResult<List<ProductDto>>.Success(productsFromCache);
         var products = await productRepository.GetAllAsync();
         var productDto = products.Select(mapper.Map<ProductDto>).ToList();
+        await cacheService.SetAsync(CacheKey,productDto,TimeSpan.FromMinutes(10));
         return ServiceResult<List<ProductDto>>.Success(productDto);
     }
     public async Task<ServiceResult<ProductDto>> GetByIdAsync(Guid id)

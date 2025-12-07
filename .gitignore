@@ -1,42 +1,55 @@
-﻿# Build artifacts
+﻿# gitignore for .NET 9 layered architecture (solution with multiple projects: Api, Core, Infrastructure, Tests, etc.)
+
+# Build results
 /bin/
 /obj/
+/**/bin/
+/**/obj/
 /out/
-/artifacts/
+artifacts/
+/**/artifacts/
 /publish/
+/**/publish/
 
-# Visual Studio
+# VS and Rider
 .vs/
+.idea/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-
-# JetBrains Rider
-.idea/
 *.sln.iml
 *.DotSettings.user
+*.iml
 
-# NuGet & packages
-*.nupkg
-packages/
+# Dotnet CLI and SDK
 .nuget/
 .nuget/packages/
+.dotnet/
+project.lock.json
+project.fragment.lock.json
 
-# Test results
+# NuGet packages and output
+*.nupkg
+packages/
+**/packages/
+
+# Test results and coverage
 TestResults/
 *.trx
 coverage/
 *.coverage
 *.coveragexml
+coverage*.xml
+*.lcov
 
-# Logs and temp
+# Logs, temp and cache
 *.log
 *.tmp
+*.cache
+obj/**/project.assets.json
 
-# Runtime / generated
-project.lock.json
-project.fragment.lock.json
+# Database files
 *.db
 *.mdf
 *.ldf
@@ -46,24 +59,58 @@ project.fragment.lock.json
 # Publish / deployment
 *.Publish.xml
 *.azurePubxml
+deploy/
+publish/
 
-# Resharper
+# User secrets and local config (do not commit secrets)
+secrets.json
+**/secrets.json
+local.settings.json
+**/local.settings.json
+appsettings.*.Local.json
+**/appsettings.*.Local.json
+
+# ReSharper
 _ReSharper*/
 */.ReSharper*/
 *.DotSettings.user
 
-# Rider / IDE config
+# JetBrains Rider config
 .idea/
-*.iml
+*.sln.iml
+*.DotSettings.user
+
+# VS Code workspace (optional - ignore local editor settings)
+.vscode/
 
 # OS files
 Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
-# Node / front-end (if present)
+# Node / front-end
 node_modules/
 bower_components/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
 
-# Certificates
+# Certificates and keys
 *.pfx
+*.key
+*.pem
+
+# Containers and docker (optional)
+docker-compose.override.yml
+**/docker-compose.override.yml
+
+# Misc
+*.bak
+*.orig
+*.swp
+*.swo
+*.class
