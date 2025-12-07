@@ -17,3 +17,4 @@ D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Persistence\o
 D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Persistence\obj\Debug\net9.0\ref\CleanArchitecture.Persistence.dll
 D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Persistence\bin\Debug\net9.0\CleanArchitecture.Persistence.runtimeconfig.json
 D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Persistence\obj\Debug\net9.0\CleanArchitecture.Persistence.genruntimeconfig.cache
+D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Persistence\obj\Debug\net9.0\CleanArchitecture.Persistence.sourcelink.json

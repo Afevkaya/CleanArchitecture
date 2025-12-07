@@ -13,3 +13,4 @@ D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Application\o
 D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net9.0\refint\CleanArchitecture.Application.dll
 D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net9.0\CleanArchitecture.Application.pdb
 D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net9.0\ref\CleanArchitecture.Application.dll
+D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net9.0\CleanArchitecture.Application.sourcelink.json

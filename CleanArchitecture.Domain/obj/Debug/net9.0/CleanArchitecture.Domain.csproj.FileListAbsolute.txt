@@ -9,3 +9,4 @@ D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Domain\obj\De
 D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net9.0\refint\CleanArchitecture.Domain.dll
 D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net9.0\CleanArchitecture.Domain.pdb
 D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net9.0\ref\CleanArchitecture.Domain.dll
+D:\Software\BE\Fatih\CleanArch\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net9.0\CleanArchitecture.Domain.sourcelink.json
